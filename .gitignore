@@ -1,0 +1,11 @@
+# DeepSeek Harness skill registration links — recreated by setup-skills.ps1.
+# Ignored so git never follows the junctions and stores duplicate SKILL.md files.
+.dsh/skills/
+
+# OS / editor noise
+Thumbs.db
+desktop.ini
+.DS_Store
+*.tmp
+*~
+.vscode/
