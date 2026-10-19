@@ -3,11 +3,11 @@
 Follow top to bottom. Tick each box. One-time setup is Part 1–3; Part 4 repeats per post.
 
 ## Part 1 — Put the workshop somewhere permanent
-- [ ] Keep the whole `hunterseek_pw/` folder in a permanent home (not a temp/downloads folder).
-- [ ] Choose a portability option (pick ONE, optional but recommended):
-  - [ ] **Git** — `cd hunterseek_pw && git init && git add . && git commit -m "Hunterseek workshop v1"` then push to a remote.
-  - [ ] **Cloud drive** — place `hunterseek_pw/` in Google Drive / Dropbox / OneDrive.
-- [ ] Confirm the `memory/` folder came along (the workshop's accumulated experience).
+- [x] Lives at `C:\Deepseek\hunterseek_pw` (permanent, not a temp folder).
+- [x] **GitHub backup — done.** Private repo `ryanyeapbh/hunterseek_pw_team`, pushed; the
+      scheduled task **"Hunterseek GitHub sync"** commits + pushes daily at 21:00 with
+      catch-up. Manual run: `pwsh -NoProfile -File .\sync-github.ps1`.
+- [x] `memory/` travels with the folder (that's where accumulated experience lives).
 
 ## Part 2 — Register the 5 Phase 1 skills
 

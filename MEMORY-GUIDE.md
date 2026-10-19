@@ -37,21 +37,28 @@ folder goes. Nothing lives in device-only or session-only storage. To move the w
 its accumulated experience to another device or account, just move the `hunterseek_pw/`
 folder.
 
-## 4. Recommended: keep `hunterseek_pw/` in version control or cloud sync
-Pick one — optional, but makes transfer automatic:
+## 4. Version control — already set up (private GitHub, daily auto-sync)
 
-**Option A — Git (best: history + portability)**
-```
-cd hunterseek_pw
-git init
-git add .
-git commit -m "Hunterseek workshop v1"
-# push to GitHub/GitLab, then on any device: git clone / git pull
-```
+**Option A is live.** This folder is a git repository pushed to a **private** GitHub repo:
+`https://github.com/ryanyeapbh/hunterseek_pw_team`
 
-**Option B — Cloud drive (simplest)**
+- `sync-github.ps1` — commits any changes and pushes them. Run it by hand whenever you want:
+  `pwsh -NoProfile -File .\sync-github.ps1`
+- **Automatic:** Windows Task Scheduler task **"Hunterseek GitHub sync"** runs it daily at
+  **21:00**, and catches up if the PC was off at that time.
+- Log: `%LOCALAPPDATA%\hunterseek-pw\sync.log` (kept outside the repo so logging never creates
+  commits).
+- Credentials live in Windows Credential Manager (Git Credential Manager) — never in this
+  folder. If a push ever asks you to sign in again, that's the expected renewal.
+- `.dsh\skills\` is git-ignored on purpose: those are links, rebuilt by `setup-skills.ps1`.
+- Recovered on another device by cloning the repo, then running `setup-skills.ps1`.
+- To pause syncing: disable the task (`Disable-ScheduledTask -TaskName 'Hunterseek GitHub sync'`).
+
+**Option B — Cloud drive (alternative)**
 Put the `hunterseek_pw/` folder in Google Drive / Dropbox / OneDrive. It syncs across your
-devices automatically; open it from whichever machine you're on.
+devices automatically; open it from whichever machine you're on. Don't combine this with the
+git task unless you understand the conflict risk — `.git` directories and cloud sync can
+fight.
 
 **Option C — Manual copy**
 Zip and copy `hunterseek_pw/` to the new device. Works, but you must remember to re-copy

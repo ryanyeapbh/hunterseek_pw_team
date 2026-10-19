@@ -178,5 +178,7 @@ corrected, or rejected.
   `gale-gaming/` (each a `SKILL.md`).
 - `AGENTS.md` — the persona/standing-rules layer loaded automatically with every session.
 - `setup-skills.ps1` — registers the role skills with DeepSeek Harness (re-run after moving the folder).
+- `sync-github.ps1` — commits and pushes the workshop to the private GitHub repo; run daily by
+  the scheduled task "Hunterseek GitHub sync" (21:00, catch-up enabled).
 - `memory/` — a MEMORY.md per role + shared `content-log.md`.
 - `hunterseek_pw.code-workspace` — open the whole workshop as one workspace.
