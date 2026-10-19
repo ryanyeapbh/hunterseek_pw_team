@@ -1,7 +1,7 @@
 # Hunterseek — Content Log
 
-> Shared cross-role log for Hunterseek Private Workshop. All four Phase 1 roles (Sam, Vans,
-> Pat, Mark) read this for context and log planned/posted content and cross-role
+> Shared cross-role log for Hunterseek Private Workshop. All Phase 1 roles (Sam, Vans, Pat,
+> Mark, Gale, Ace) read this for context and log planned/posted content and cross-role
 > dependencies here. Ryan reviews it for the workshop-wide picture. Plain markdown; travels
 > with the `hunterseek_pw` folder. Never store secrets, credentials, or work/company
 > information here.
@@ -22,6 +22,10 @@
 |-------------|--------|---------|------|------------------|
 
 ## Notes
+- **2026-10-19 — Ace hired (Phase 3).** `ace-arena` owns the play/strategy side: learning new
+  games (video, TCG, tabletop, board), rules digests, strategy plans, text simulation, and
+  versus play. Ace never publishes and never decides content — gaming content stays with Gale.
+  Ace's private memory: `memory/ace-arena-MEMORY.md`.
 - **2026-10-19 — Gale hired (Phase 2 closed).** `gale-gaming` now owns the gaming pillar:
   session/stream plans, clip picks, highlight reels, gaming titles/hooks. Vans still packages
   gaming videos, Sam captions them, Pat shoots stills, Mark scores them. Gale's private memory:

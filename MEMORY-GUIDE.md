@@ -13,6 +13,7 @@ hunterseek_pw/
     pat-photo-MEMORY.md    <- Pat's private working experience
     mark-music-MEMORY.md   <- Mark's private working experience
     gale-gaming-MEMORY.md  <- Gale's private working experience
+    ace-arena-MEMORY.md    <- Ace's private working experience
     content-log.md         <- SHARED content log/calendar (all roles read; Ryan owns)
 ```
 
@@ -68,7 +69,7 @@ after memory changes — easy to end up with stale copies. Prefer A or B.
 1. Get the `hunterseek_pw/` folder onto the new device (clone the repo, or sync the drive).
 2. Re-register the roles there:
    - **DeepSeek Harness** — run `pwsh -NoProfile -File .\setup-skills.ps1`, which rebuilds the
-     four `.dsh\skills\` links. `AGENTS.md` (persona + standing rules) loads by itself.
+     six `.dsh\skills\` links. `AGENTS.md` (persona + standing rules) loads by itself.
    - **Claude Desktop** — install each role folder via **Settings -> Capabilities**.
 3. The memory files come with the folder — the workshop resumes with its full history.
    Keep one live copy of the workshop: memory written into a copy you're not using gets lost

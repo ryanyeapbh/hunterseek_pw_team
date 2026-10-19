@@ -26,7 +26,7 @@ Behave like a competent creative partner who knows Ryan's voice, not like a mark
 
 ## The crew — route work by role
 
-Five Phase 1 roles exist as skills. Load the matching skill with the `skill` tool before doing
+Six Phase 1 roles exist as skills. Load the matching skill with the `skill` tool before doing
 that role's work, then follow its `SKILL.md` in full.
 
 | Codename | Skill | Use for |
@@ -36,11 +36,16 @@ that role's work, then follow its `SKILL.md` in full.
 | **Pat** | `pat-photo` | Shot planning, photo curation, photo captions (IG + Facebook Page) |
 | **Mark** | `mark-music` | Composition briefs/audio mood, licensed track fallback, generator prompts |
 | **Gale** | `gale-gaming` | Gaming: session/stream plans, clip picks, highlight reels, gaming titles/hooks |
+| **Ace** | `ace-arena` | Play & strategy: learning a new game's rules, strategy plans, text simulation/sparring, playing versus Ryan |
 
 Phase 2 is closed — Gale was hired 2026-10-19 and owns the gaming pillar. Vans still packages
-gaming videos, Sam captions them, Pat shoots stills, Mark scores them. To hire a future role,
-follow the same pattern: `<role>/SKILL.md` + `memory/<role>-MEMORY.md`, a row in the charter's
-Phase 1 table, and the folder name added to `setup-skills.ps1`.
+gaming videos, Sam captions them, Pat shoots stills, Mark scores them.
+
+Ace was hired 2026-10-19 (Phase 3) for the play/strategy side of gaming — rules, plans,
+simulation and head-to-head play against Ryan. Ace does not publish and does not decide what
+becomes content: anything worth filming goes to Gale. To hire a future role, follow the same
+pattern: `<role>/SKILL.md` + `memory/<role>-MEMORY.md`, a row in the charter's Phase 1 table,
+and the folder name added to `setup-skills.ps1`.
 
 A request usually spans roles (e.g. a build video needs Vans's script, Mark's track, Pat's
 stills, Sam's caption). Do one role at a time, name which role produced which part, and log the
@@ -79,7 +84,7 @@ cross-role dependency in `memory/content-log.md`.
 
 ## Skill registration (DSH)
 
-The five roles are discovered from `.dsh\skills\<role>\SKILL.md`, each a directory link to the
+The six roles are discovered from `.dsh\skills\<role>\SKILL.md`, each a directory link to the
 real role folder, so editing `sam-social\SKILL.md` takes effect immediately with no copy to
 maintain. If the links are missing after moving this folder to a new machine, recreate them:
 
@@ -87,4 +92,4 @@ maintain. If the links are missing after moving this folder to a new machine, re
 pwsh -NoProfile -File .\setup-skills.ps1
 ```
 
-macOS/Linux: `ln -s ../../sam-social .dsh/skills/sam-social` (same for the other four).
+macOS/Linux: `ln -s ../../sam-social .dsh/skills/sam-social` (same for the other five).

@@ -1,4 +1,4 @@
-# Hunterseek Private Workshop — register the four role skills with DSH.
+# Hunterseek Private Workshop — register the role skills with DSH.
 #
 # DSH discovers skills at <project>\.dsh\skills\<name>\SKILL.md. The role folders live one
 # level up, so each entry here is a directory link (junction) — the real SKILL.md stays the
@@ -12,7 +12,7 @@
 $ErrorActionPreference = 'Stop'
 $root = $PSScriptRoot
 $skillsDir = Join-Path $root '.dsh\skills'
-$roles = @('sam-social', 'vans-video', 'pat-photo', 'mark-music', 'gale-gaming')
+$roles = @('sam-social', 'vans-video', 'pat-photo', 'mark-music', 'gale-gaming', 'ace-arena')
 
 New-Item -ItemType Directory -Force -Path $skillsDir | Out-Null
 

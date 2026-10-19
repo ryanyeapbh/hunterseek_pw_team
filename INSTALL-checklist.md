@@ -9,10 +9,10 @@ Follow top to bottom. Tick each box. One-time setup is Part 1–3; Part 4 repeat
       catch-up. Manual run: `pwsh -NoProfile -File .\sync-github.ps1`.
 - [x] `memory/` travels with the folder (that's where accumulated experience lives).
 
-## Part 2 — Register the 5 Phase 1 skills
+## Part 2 — Register the 6 Phase 1 skills
 
 **DeepSeek Harness (current setup) — automatic.** DSH discovers skills at
-`<workshop>\.dsh\skills\<name>\SKILL.md`. Those five entries are directory links to the real
+`<workshop>\.dsh\skills\<name>\SKILL.md`. Those six entries are directory links to the real
 role folders, so there is only ever one `SKILL.md` to maintain:
 - [ ] Run `pwsh -NoProfile -File .\setup-skills.ps1` (already done on this machine; re-run it
       whenever the workshop moves to a new drive or machine, or a role is added).
@@ -26,9 +26,10 @@ each role folder below (each contains a `SKILL.md`):
 - [ ] `hunterseek_pw/pat-photo`
 - [ ] `hunterseek_pw/mark-music`
 - [ ] `hunterseek_pw/gale-gaming`
+- [ ] `hunterseek_pw/ace-arena`
 
 ## Part 3 — Verify install
-- [ ] Ask: "list my skills" — confirm Sam, Vans, Pat, Mark, and Gale all appear.
+- [ ] Ask: "list my skills" — confirm Sam, Vans, Pat, Mark, Gale, and Ace all appear.
 - [ ] Quick smoke test: "Sam, draft a caption for my latest build" — it should reference the
       content pillars, Ryan's voice rules, and the draft-and-hold rule.
 - [ ] Confirm each role can read its own MEMORY file and `memory/content-log.md` **in this
@@ -42,9 +43,11 @@ each role folder below (each contains a `SKILL.md`):
 - [ ] Review every draft yourself — nothing publishes without your explicit go-ahead.
 - [ ] After posting, confirm the entry moved from Planned to Posted in `content-log.md`.
 
-## Part 5 — Phase 2 (done)
+## Part 5 — Phase 2/3 (done)
 - [x] Gale hired 2026-10-19: `gale-gaming/SKILL.md` + `memory/gale-gaming-MEMORY.md` added,
       roster row moved into the Phase 1 table, skill registered in `.dsh\skills\`.
+- [x] Ace hired 2026-10-19: `ace-arena/SKILL.md` + `memory/ace-arena-MEMORY.md` added, roster
+      row in the Phase 1 table, skill registered in `.dsh\skills\`.
 - [ ] To hire a future role, repeat that pattern and add the folder to `setup-skills.ps1`.
 
 ## Part 6 — Golden rules (sanity check)

@@ -1,0 +1,21 @@
+Here is the transcript of the video **"GUNDAM ASSEMBLE QUICK PLAY GUIDE"**, organized by section:
+
+### Game Overview and Setup
+Gundam Assemble is a tactical miniatures game based on the *Mobile Suit Gundam* series where players defeat enemy mobile suits, capture objectives, and complete mission-specific goals using scenario-matched strategies. Game setup is dictated by the scenario being played, starting in this guide with a basic scenario that has no special rules. Players select three units for their team, with each unit having its own stats, weapons, and abilities listed on its unit card, alongside choosing their tactics cards. Game components are placed at starting positions on the chosen map to begin play.
+
+### Victory Conditions and Timeline System
+The core game system relies on victory conditions and a timeline system that govern play across two phases of 10 rounds each, totaling 20 rounds. Victory points are earned by capturing and defending objectives, completing scenario goals, and defeating enemy mobile suits. Each unit has a printed victory point value awarded upon defeat. Because defeated units can be redeployed, players can choose whether to repeatedly target weaker units or go after stronger units for larger point payouts. 
+
+Game rounds are tracked using a common 10-round timeline track where unit tokens are placed at the start of the game. Play proceeds sequentially through rounds, allowing players to activate a unit when the current round reaches its token. Performing an action, such as attacking with a specific weapon, incurs a timeline cost that moves the unit's token forward on the track (for example, advancing two rounds for a beam saber attack versus four rounds for a beam rifle). The player with the most victory points at the end of two phases (20 rounds) wins.
+
+### Unit Actions, Movement, and Combat
+When a unit's round is reached, it can move, use a tactics card, use a command ability, or perform a primary action, with at least one primary action required per round. Units can move up to three hexes in any direction, though terrain features like water or higher ground require additional movement points. 
+
+Attacking requires checking the unit card for timeline cost, range, and strength (the number of attack dice to roll). Rolling a 4 or higher on a die counts as a hit that deals 1 point of damage. Rolling a 9 or 10 triggers a critical hit effect described on the unit card, and accuracy can be modified by elevation and terrain. 
+
+### Tactics Cards and Unit Defeat
+Tactics cards offer limited-use effects such as unit upgrades, damage restoration, or special abilities. A unit is defeated when it receives damage equal to or exceeding the hit points on its unit card. Defeated units are removed from the board, but they can be redeployed after two rounds have passed. After 20 rounds, the player who has accumulated the most victory points wins.
+
+---
+
+🎲 **Would you like me to create a quick reference cheat sheet or summary table covering the core rules, action costs, and dice roll mechanics?**

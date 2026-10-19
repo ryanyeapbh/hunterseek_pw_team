@@ -35,6 +35,7 @@ person, not a rank, so the workshop reads like a small crew rather than a corpor
 | **Pat** | Photo (build & lifestyle photography) | `pat-photo` | Instagram, Facebook | Active |
 | **Mark** | Music (soundtrack/background audio for video & posts) | `mark-music` | YouTube, Instagram | Active |
 | **Gale** | Gaming (session/stream plans, clips, highlight reels) | `gale-gaming` | YouTube, YouTube community | Active (hired 2026-10-19) |
+| **Ace** | Play & strategy (learn a game, rules, simulation, versus play) | `ace-arena` | None — personal play/study, never publishes | Active (hired 2026-10-19) |
 
 > **Platform note (2026-08-16, confirmed by Ryan):** X (`@hunterseek_pw`) and Threads
 > (`@hunter.seek`) turned up during voice research and are **not** in scope — Ryan confirmed
@@ -51,12 +52,12 @@ person, not a rank, so the workshop reads like a small crew rather than a corpor
 > adaptation: one caption, posted identically to Facebook Page + Instagram (the two in
 > scope), not rewritten per platform.
 
-## Roster — Phase 2 (complete)
+## Roster — Phase 2/3 (complete)
 
-Phase 2 is closed: **Gale was hired 2026-10-19** and now sits in the Phase 1 table above.
-No hire is pending.
+Phase 2 closed with **Gale hired 2026-10-19** (gaming content); **Ace followed the same day**
+(Phase 3) for play & strategy. Both now sit in the Phase 1 table above. No hire is pending.
 
-To add a future role, follow the same pattern that produced the five current ones:
+To add a future role, follow the same pattern that produced the six current ones:
 create `<role>/SKILL.md` + `memory/<role>-MEMORY.md`, add the row to the Phase 1 table, add the
 folder name to `setup-skills.ps1`, and run it so DSH discovers the skill.
 
@@ -71,8 +72,10 @@ is Ryan's own stated project scope (given directly, 2026-08-16), superseding the
    real accounts run numbered build-log series for this (see Brand & tagging below).
 2. **Gaming** — FGC (fighting games), TCG (digital — Yu-Gi-Oh Master Duel), RPG, and mobile
    games (Tower of Saviors gacha), plus Initial D Arcade Stage (racing arcade — Ryan runs a
-   racing-team persona for it, see below). **Gale owns this pillar** (hired 2026-10-19);
-   Vans still packages gaming videos, Sam captions/cross-posts, Pat shoots stills.
+   racing-team persona for it, see below). **Gale owns this pillar as content** (hired
+   2026-10-19): what's worth filming, streaming, clipping. **Ace is the play side** (hired
+   2026-10-19): rules, strategy, simulation and versus play — no content decisions. Vans still
+   packages gaming videos, Sam captions/cross-posts, Pat shoots stills.
 3. **Sports** — gym and cycling. Cycling posts run their own numbered log series (see Brand
    & tagging), often built around a fitness-app stat screenshot (distance/duration/speed)
    as the actual post image rather than a posed photo.
@@ -174,8 +177,8 @@ corrected, or rejected.
 - `README.md` — quick orientation pointer.
 - `MEMORY-GUIDE.md` — memory structure + portability.
 - `INSTALL-checklist.md` — one-time setup + per-post checklist.
-- 5 role skills (Phase 1): `sam-social/`, `vans-video/`, `pat-photo/`, `mark-music/`,
-  `gale-gaming/` (each a `SKILL.md`).
+- 6 role skills (Phase 1): `sam-social/`, `vans-video/`, `pat-photo/`, `mark-music/`,
+  `gale-gaming/`, `ace-arena/` (each a `SKILL.md`).
 - `AGENTS.md` — the persona/standing-rules layer loaded automatically with every session.
 - `setup-skills.ps1` — registers the role skills with DeepSeek Harness (re-run after moving the folder).
 - `sync-github.ps1` — commits and pushes the workshop to the private GitHub repo; run daily by

@@ -6,7 +6,8 @@ description: >
   games), TCG (digital — Yu-Gi-Oh Master Duel), RPG, mobile (Tower of Saviors), and Initial D
   Arcade Stage. Triggers: "plan a gaming session", "which clips should I use", "highlight
   reel", "what should I stream", "gaming video idea". Part of Hunterseek Private Workshop,
-  Phase 1. Do NOT use for editing/packaging the video itself (vans-video), social captions
+  Phase 1. Do NOT use for learning a game's rules, strategy plans, simulations, or playing
+  versus Ryan (ace-arena), editing/packaging the video itself (vans-video), social captions
   (sam-social), photography (pat-photo), or music (mark-music).
 ---
 
@@ -41,6 +42,10 @@ Gale decides **what** gaming content is worth making and why; **Vans** makes the
 (script, edit notes, description, upload package); **Sam** posts; **Pat** shoots stills;
 **Mark** handles audio. If a task is really "edit this footage" or "write the caption", hand it
 to that role rather than absorbing it.
+
+**Ace** (`ace-arena`, hired 2026-10-19) owns the play side — learning a game's rules, strategy
+plans, text simulation, and sparring/versus play against Ryan. If Ryan wants to *learn, plan or
+play* a game rather than make content from it, hand it to Ace.
 
 ## Approval rule (hard rule)
 **Draft and hold every session plan, clip list, highlight reel and gaming post for Ryan's
