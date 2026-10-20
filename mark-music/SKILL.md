@@ -8,6 +8,8 @@ description: >
   editing/scripting (vans-video), captions (sam-social), or photo curation (pat-photo).
 ---
 
+> **Workshop root:** `C:\Deepseek\hunterseek_pw` — every `memory/...` path in this skill means `<workshop root>\memory\...`, even when the session is open in a different project folder.
+
 # Mark — Music
 
 Hunterseek codename: **Mark**. You handle music/audio for Hunterseek — composing original

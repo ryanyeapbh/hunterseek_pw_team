@@ -11,11 +11,16 @@
   (digital — Yu-Gi-Oh Master Duel), **RPG**, **mobile** (Tower of Saviors), and **Initial D
   Arcade Stage**. Hired to cover *any* game, not just these five.
 - **GUNDAM ASSEMBLE** (BANDAI TABLETOP GAMES, launched Oct 2026) — learned 2026-10-19.
-  - Source: *Official Core Rulebook* **v1.0, updated 2026-09-14** (PDF, now in
-    `ace-arena\gundam-assemble\source\`), plus the official Quick-Start Play Guide and the
-    Starter Set 01 card list. Card images cached in `ace-arena\gundam-assemble\cards\`.
-  - Deliverables: `GUNDAM-ASSEMBLE-quickstart.md` (rules digest + versus protocol) and
-    `GUNDAM-ASSEMBLE-cards.md` (unit stats, weapons, all 18 Tactics cards).
+  - **Project lives outside the workshop:** `C:\Deepseek\project\gundam-assemble\` (moved
+    2026-10-20). This memory stays here — the workshop keeps how we work, that folder keeps the
+    game. Structure: `docs\`, `rules\`, `cards\{units,tactics,sheets}`, `media\{transcripts,playguide}`,
+    `app\index.html`, `sim\`, `tools\`.
+  - Source: *Official Core Rulebook* **v1.0, updated 2026-09-14**
+    (`rules\GA_Official-Core-Rulebook_v1.0_2026-09-14.pdf`), plus the official Quick-Start Play
+    Guide and the Starter Set 01 card list.
+  - Deliverables: `docs\GUNDAM-ASSEMBLE-quickstart.md` (rules digest + versus protocol),
+    `docs\GUNDAM-ASSEMBLE-cards.md` (unit stats, weapons, all 18 Tactics cards),
+    `docs\MAP-generic-sector7.md` (house map), `app\index.html` (board tracker).
   - Still unverified: **Sleeping Leviathan scenario card** (objective/goal scoring) and the **board map**.
     Everything else is confirmed — Advance = 0 TL, all 6 unit ability texts, terrain convention
     (light = lvl 1, dark = lvl 2), card-type timing.
@@ -37,8 +42,13 @@
 
 ## Modes & formats that landed
 
-- Nothing confirmed yet. First real sparring match sets the baseline — record what he keeps,
-  corrects, or asks to redo.
+- **Coach mode was his first choice** (2026-10-19/20) — he took the mode that explains the "why"
+  before he commits, rather than discovering mistakes after. Default to Coach for teaching games
+  unless he says sparring; explain the maths behind a warning, not just the rule.
+- He asks for **random generation** over choosing himself ("random pick for me") — happy to let
+  the dice decide a squad, and to learn from the bad draw. Don't over-optimise his side for him.
+- Wants **visual tooling**, not only prose: asked for a playable board app early. Tier 1
+  (state tracker) satisfied that; a rules engine was not requested yet.
 
 ## Recurring pitfalls
 
@@ -50,11 +60,14 @@
   Hand off and log the dependency in `content-log.md`.
 - **Extracting Japanese game PDFs:** no pdftotext/pypdf on this machine and PyPI is blocked, so
   `tools\pdftext.py` (stdlib zlib + ToUnicode CMaps) does the job. Rulebook text lands in
-  `rulebook.txt`.
+  `rules\rulebook.txt`.
 - **Bandai's global site** 403s plain fetch/CloudFront. What works: `https://r.jina.ai/<url>`
   for text pages, and Node `fetch` with a browser User-Agent + Referer for images. Card data is
   **images only** — crop the text bands, upscale ×1.5–2 with Pillow, then read the sheet.
-  `tools\make_sheets.py` builds the contact sheets.
+  `tools\make_sheets.py` rebuilds the contact sheets (run from the project root).
+- **Files outside the workspace need approval**, and deleting *uploaded* files was refused even
+  inside it (OS-level access denied on the PNGs while a freshly created file deleted fine).
+  Finish such moves with a single wider-access call rather than fighting the permission.
 
 ## Log
 
@@ -96,3 +109,14 @@
   rules. That split is what makes it trustworthy. A rules engine is a separate, bigger promise.
 - Verification without a browser: shim `document`/`localStorage` in Node, run the page script,
   assert it renders and that the hex-distance maths matches the map doc (`node --check` too).
+
+### 2026-10-20 — Game project moved out of the workshop
+- What I did: reorganised everything into `C:\Deepseek\project\gundam-assemble\` (docs / rules /
+  cards / media / app / sim / tools + README), renamed the rulebook PDF to carry its version and
+  date, rewrote cross-references, dropped one scraped HTML page, and deleted the workshop copy
+  after a SHA-256 comparison of all 61 files matched.
+- Lesson: **stage outside-in.** Build the new tree inside the workspace, hash-verify the copy,
+  then delete — never move across a permission boundary in one step. The delete of six uploaded
+  PNGs was refused by the OS under normal confinement and only completed with wider access.
+- Memory stayed in `hunterseek_pw` deliberately: it describes *how we work*, not where the files
+  sit. Only the paths in it changed.

@@ -9,6 +9,8 @@ description: >
   (pat-photo), or music selection (mark-music).
 ---
 
+> **Workshop root:** `C:\Deepseek\hunterseek_pw` — every `memory/...` path in this skill means `<workshop root>\memory\...`, even when the session is open in a different project folder.
+
 # Vans — Video
 
 Hunterseek codename: **Vans**. You handle Ryan's YouTube video content for Hunterseek:

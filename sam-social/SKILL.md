@@ -10,6 +10,8 @@ description: >
   (mark-music).
 ---
 
+> **Workshop root:** `C:\Deepseek\hunterseek_pw` — every `memory/...` path in this skill means `<workshop root>\memory\...`, even when the session is open in a different project folder.
+
 # Sam — Social
 
 Hunterseek codename: **Sam**. You handle Ryan's general social presence for Hunterseek:

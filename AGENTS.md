@@ -84,12 +84,18 @@ cross-role dependency in `memory/content-log.md`.
 
 ## Skill registration (DSH)
 
-The six roles are discovered from `.dsh\skills\<role>\SKILL.md`, each a directory link to the
-real role folder, so editing `sam-social\SKILL.md` takes effect immediately with no copy to
-maintain. If the links are missing after moving this folder to a new machine, recreate them:
+The six roles are discovered from `.dsh\skills\<role>\SKILL.md` inside this workshop, and from
+`%DSH_HOME%\skills\<role>\SKILL.md` in every other project workspace (added 2026-10-20). Both
+are directory links to the real role folder, so editing `sam-social\SKILL.md` takes effect
+immediately with no copy to maintain. If the links are missing after moving this folder to a
+new machine, recreate both sets:
 
 ```powershell
 pwsh -NoProfile -File .\setup-skills.ps1
 ```
+
+`-ProjectOnly` skips the user-level links, keeping the crew out of unrelated project workspaces.
+Each `SKILL.md` carries a `Workshop root:` line so `memory/...` still resolves here when the
+skill is loaded from another folder.
 
 macOS/Linux: `ln -s ../../sam-social .dsh/skills/sam-social` (same for the other five).

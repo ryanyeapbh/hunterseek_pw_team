@@ -15,7 +15,10 @@ Follow top to bottom. Tick each box. One-time setup is Part 1–3; Part 4 repeat
 `<workshop>\.dsh\skills\<name>\SKILL.md`. Those six entries are directory links to the real
 role folders, so there is only ever one `SKILL.md` to maintain:
 - [ ] Run `pwsh -NoProfile -File .\setup-skills.ps1` (already done on this machine; re-run it
-      whenever the workshop moves to a new drive or machine, or a role is added).
+      whenever the workshop moves to a new drive or machine, or a role is added). It now links
+      the roles twice: into this workshop's `.dsh\skills` and into the user-level
+      `%DSH_HOME%\skills`, so the crew also loads when DSH is opened on another project folder.
+      Use `-ProjectOnly` if you want the crew confined to this workshop.
 - [ ] `AGENTS.md` in the workshop root is the persona/standing-rules layer and loads
       automatically with every session in this folder — nothing to install for it.
 
@@ -29,7 +32,8 @@ each role folder below (each contains a `SKILL.md`):
 - [ ] `hunterseek_pw/ace-arena`
 
 ## Part 3 — Verify install
-- [ ] Ask: "list my skills" — confirm Sam, Vans, Pat, Mark, Gale, and Ace all appear.
+- [ ] Ask: "list my skills" — confirm Sam, Vans, Pat, Mark, Gale, and Ace all appear here, and
+      again after opening an unrelated project folder in DSH (proves the user-level links work).
 - [ ] Quick smoke test: "Sam, draft a caption for my latest build" — it should reference the
       content pillars, Ryan's voice rules, and the draft-and-hold rule.
 - [ ] Confirm each role can read its own MEMORY file and `memory/content-log.md` **in this
